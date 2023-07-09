@@ -7,8 +7,9 @@ const Footer = () => {
 		<footer className='bg-primary-dark px-4 py-9 flex items-center justify-between md:px-10 md:py-9 lg:px-40 lg:py-8'>
 			<Image src={Logo} alt='Skilled' />
 			<Link
+				prefetch={false}
 				href={'#'}
-				className='px-6 py-3 bg-secondary-gradient text-white rounded-full text-body-sm hover:opacity-50 lg:px-8 lg:py-4'>
+				className='px-6 py-3 bg-secondary-gradient text-white rounded-full text-base/7 font-bold hover:bg-secondary-hover-gradient lg:px-8 lg:py-4'>
 				Get Started
 			</Link>
 		</footer>
