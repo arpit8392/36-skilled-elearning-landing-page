@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
@@ -13,7 +12,6 @@ module.exports = {
 				'secondary-2': '#666CA3',
 				'accent-1': '#F74780',
 				'accent-2': '#FFA7C3',
-				'primary-light': '#FFFFFF',
 			},
 			fontSize: {
 				'heading-xl': [
