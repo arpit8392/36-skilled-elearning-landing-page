@@ -30,7 +30,7 @@ const Hero = () => {
 					width={327}
 					height={301}
 					priority
-					className='block w-auto object-cover object-center md:hidden'
+					className='block w-auto md:hidden'
 				/>
 				<Image
 					src={'/assets/image-hero-tablet@2x.webp'}
@@ -38,7 +38,7 @@ const Hero = () => {
 					width={640}
 					height={640}
 					priority
-					className='hidden md:block w-full lg:hidden'
+					className='hidden md:block w-auto lg:hidden'
 				/>
 				<Image
 					src={'/assets/image-hero-desktop@2x.webp'}
@@ -46,7 +46,7 @@ const Hero = () => {
 					width={990}
 					height={937}
 					priority
-					className='hidden lg:block w-full'
+					className='hidden lg:block w-auto'
 				/>
 			</div>
 		</section>
