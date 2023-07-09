@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={plus_jakarta_sans.className}>
+			<body className={`${plus_jakarta_sans.className} overflow-x-hidden`}>
 				<Header />
 				{children}
 				<Footer />
