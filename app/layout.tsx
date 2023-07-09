@@ -1,4 +1,3 @@
-import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from 'next/font/google'
@@ -19,10 +18,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${plus_jakarta_sans.className} overflow-x-hidden`}>
-				<Header />
+			<body className={`${plus_jakarta_sans.className}`}>
 				{children}
-				<Footer />
 			</body>
 		</html>
 	)

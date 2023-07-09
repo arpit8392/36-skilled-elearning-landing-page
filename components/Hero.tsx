@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 const Hero = () => {
 	return (
-		<section className='px-4 py-10 md:pl-10 lg:pl-40 flex flex-col gap-12 md:flex-row md:gap-0 md:py-24 lg:py-40 '>
-			<div className='flex flex-col gap-7 lg:gap-8'>
+		<section className='md:relative px-4 pt-10 md:pl-10 lg:pl-40 flex flex-col gap-12 md:flex-row md:gap-0 md:py-24 lg:py-40'>
+			<div className='flex flex-col gap-7 lg:gap-8 flex-1'>
 				<h1 className='text-primary-dark font-extrabold text-[40px] leading-tight max-w-sm lg:text-[56px] lg:max-w-lg'>
 					Maximize skill, minimize budget
 				</h1>
@@ -21,7 +21,7 @@ const Hero = () => {
 					</Link>
 				</div>
 			</div>
-			<div className='md:absolute -top-24 -right-72'>
+			<div className='md:absolute -top-48 -right-72'>
 				{/* Hero Image */}
 				<Image
 					src={'/assets/image-hero-mobile@2x.webp'}
@@ -29,7 +29,7 @@ const Hero = () => {
 					width={327}
 					height={301}
 					priority
-					className='block w-auto md:hidden'
+					className='block w-auto md:hidden object-contain'
 				/>
 				<Image
 					src={'/assets/image-hero-tablet@2x.webp'}
@@ -37,7 +37,7 @@ const Hero = () => {
 					width={640}
 					height={640}
 					priority
-					className='hidden md:block w-auto lg:hidden '
+					className='hidden md:block w-auto lg:hidden object-contain'
 				/>
 				<Image
 					src={'/assets/image-hero-desktop@2x.webp'}
@@ -45,7 +45,7 @@ const Hero = () => {
 					width={990}
 					height={937}
 					priority
-					className='hidden lg:block w-auto'
+					className='hidden lg:block w-auto object-contain'
 				/>
 			</div>
 		</section>
